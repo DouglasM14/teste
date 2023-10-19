@@ -1,0 +1,150 @@
+@font-face {
+    font-family: minhafonte;
+    src: url(Ailerons-Typeface.otf);
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;500;700&display=swap'); */
+
+/* p {
+    font-family: 'Noto Serif', serif;
+    font-family: minhafonte;
+    font-size: 3rem;
+   
+    width: 1ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing-reverse 1s, steps(14);
+}
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background-image: url(background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header nav {
+    padding: 0 30px 0 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    position: fixed;
+}
+
+header div.logo {
+    display: flex;
+}
+
+header div.logo span {
+    color: #FFF;
+    font-family: 'Noto Serif';
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+header span#part2-1, #part1-1{
+    display: none;
+}
+
+header div.links {
+    display: flex;
+    visibility: hidden;
+    gap: 60px
+}
+
+header div.links a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Noto Serif';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+nav.rolagem {
+    background: linear-gradient(153deg, #272829 -145.87%, #37393D 102.75%);
+}
+
+nav.rolagem span#part1{
+    display: none;
+}
+nav.rolagem span#part2{
+    display: none;
+}
+
+nav.rolagem span#part1-1{
+    display: block;
+    width: 9ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s, steps(9);
+    font-family: minhafonte;
+}
+
+nav.rolagem span#part2-1{
+    display: block;
+    width: 7ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s, steps(7);
+    font-family: minhafonte;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.catalogo {
+    height: 800px;
+}
+
+.empresa {
+    height: 800px;
+}
+
+.contato {
+    height: 800px;
+}
+
+footer {
+    height: 800px;
+}
