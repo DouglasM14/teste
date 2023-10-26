@@ -1,46 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Assets/img/favicon/favicon.icon" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="catalago.css">
+    <link rel="stylesheet" href="empresa.css">
+    <link rel="stylesheet" href="contato.css">
+    <title>Templars Palace</title>
 </head>
 
 <body>
-    <header id="header">
-        <nav id="nav">
+    <header id="inicio">
+        <nav>
             <div class="logo">
                 <div>
-                    <span id="part1">T&nbsp;</span>
-                    <span id="part1-1">Templers</span>
+                    <span class="logomarca" id="txtLogo1">T&nbsp;</span>
+                    <span class="logotipo" id="txtNome1">Templars</span>
                 </div>
                 <div>
-                    <span id="part2">P</span>
-                    <span id="part2-1">Palace</span>
+                    <span class="logomarca" id="txtLogo2">P</span>
+                    <span class="logotipo" id="txtNome2">Palace</span>
                 </div>
             </div>
 
             <div class="links">
-                <a href="">Home</a>
-                <a href="">Cátalago</a>
-                <a href="">Empresa</a>
-                <a href="">Contato</a>
+                <a href="#inicio">Home</a>
+                <a href="#catalogo">Cátalago</a>
+                <a href="#empresa">Empresa</a>
+                <a href="#contato">Contato</a>
             </div>
         </nav>
 
+        <section id="frase-home">
+            <h1>A liberdade que apenas nossos <br> carros podem oferecer</h1>
+        </section>
     </header>
 
-    <section class="catalago">
+    <section id="catalago">
+        <div class="titulo-sessão">
+            <h2>EXPLORE NOSSO CATÁLOGO</h2>
+        </div>
+
+        <div class="carro-destaque">
+            <div>
+                <img id="img-carro" src="Assets/img/carros/porsche-model.png" alt="">
+
+                <div id="carro-destaque-atual">
+                    <button><img src="Assets/img/icones/setaE.svg" alt=""></button>
+
+                    <div class="nome-carro-destaque">
+                        <span id="nome-carro">Porsche 718 Cayman GT4 RS</span>
+                        <span id="ano-carro">ANO 2023 / 2023</span>
+                    </div>
+
+                    <button><img src="Assets/img/icones/setaD.svg" alt=""></button>
+                </div>
+
+                <div class="ativado-carro-destaque">
+                    <img src="Assets/Ellipse-ativado.svg" alt="">
+                    <img src="Assets/Ellipse-desativado.svg" alt="">
+                    <img src="Assets/Ellipse-desativado.svg" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="anuncio-carros-fundo">
+            <div class="anuncio-carros">
+                <img src="Assets/img/carros/570s.jpg" alt="">
+                <div class="anuncio-carros-texto">
+                    <p class="anuncio-carros-nome">MCLAREN 570S</p>
+                    <p class="anuncio-carros-ano">2018/2018</p>
+                    <p class="anuncio-carros-valor">R$ 2.100.000</p>
+                </div>
+            </div>
+
+            <div class="anuncio-carros">
+                <img src="Assets/img/carros/ferrari-roma.jpg" alt="">
+                <div class="anuncio-carros-texto">
+                    <p class="anuncio-carros-nome">MCLAREN 570S</p>
+                    <p class="anuncio-carros-ano">2018/2018</p>
+                    <p class="anuncio-carros-valor">R$ 2.100.000</p>
+                </div>
+            </div>
+
+            <div class="anuncio-carros">
+                <img src="Assets/img/carros/mercedesbenz-amg-gt.jpg" alt="">
+                <div class="anuncio-carros-texto">
+                    <p class="anuncio-carros-nome">MCLAREN 570S</p>
+                    <p class="anuncio-carros-ano">2018/2018</p>
+                    <p class="anuncio-carros-valor">R$ 2.100.000</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="empresa">
+        <div class="titulo-sessão">
+            <h2>NOSSA HISTÓRIA</h2>
+        </div>
 
     </section>
 
-    <section class="empresa">
-
-    </section>
-
-    <section class="contato">
+    <section id="contato">
 
     </section>
 
@@ -48,7 +112,6 @@
 
     </footer>
 
-    <script src="menu.js"></script>
 </body>
 
 </html>

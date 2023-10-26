@@ -1,0 +1,100 @@
+    CASAS MUITO FODAS
+
+Tipos de CASAS
+    há um total de 78 casas 60
+        10 - Normal
+            () 
+        25 - Ação
+            ()
+        25 - Passiva
+            ()
+        15 - Livro
+            (de 5 em 5 casas)
+        3 + final - Evento 
+            (de 20 em 20 casas)
+
+Começo - 
+01 - Passiva
+02 - Ação
+03 - Passiva
+04 - Ação
+05 - Livro
+06 - Passiva
+07 - Normal
+08 - Ação
+09 - Passiva
+10 - Livro
+11 - Ação
+12 - Passiva
+13 - Ação
+14 - Normal
+15 - Livro
+16 - Passiva
+17 - Ação
+18 - Passiva
+19 - Livro
+
+20 - Evento - Feira de livros:  todos os jogadores ganham um livro
+21 - Normal
+22 - Ação
+23 - Passiva
+24 - Ação
+25 - Livro
+26 - Passiva
+27 - Ação
+28 - Normal
+29 - Passiva
+30 - Livro
+31 - Ação
+32 - Passiva
+33 - Ação
+34 - Livro
+35 - Normal
+36 - Passiva
+37 - Ação
+38 - Passiva
+39 - Livro
+
+40 - Evento – Ditadura: todos os jogadores rodam um dado se o número for menor que 3 perde um livro se não nada acontece.
+41 - Ação
+42 - Normal
+43 - Passiva
+44 - Ação
+45 - Livro
+46 - Passiva
+47 - Ação
+48 - Passiva
+49 - Normal
+50 - Livro
+51 - Ação
+52 - Passiva
+53 - Ação
+54 - Passiva
+55 - Livro
+56 - Normal
+57 - Ação
+58 - Passiva
+59 - Livro
+
+60 - Evento Bienal: Você pode trocar um dos seus livros por um aleatório
+61 - Ação
+62 - Passiva
+63 - Normal
+64 - Ação
+65 - Livro
+66 - Passiva
+67 - Ação
+68 - Passiva
+69 - Livro
+
+A partir da casa 70 - área de risco se tiver 2 players na msm casa um livro será roubado.
+70 - Normal
+71 - Ação
+72 - Passiva
+73 - Ação
+74 - Passiva
+75 - Livro
+76 - Ação
+77 - Passiva
+78 - Ação
+Final - Evento - Presente de despedida - todo mundo rola um dado quem tirar o menor valor deve dar um livro de presente pra quem chegou nessa casa
