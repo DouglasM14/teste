@@ -20,34 +20,64 @@ body {
     width: 100vw;
 }
 
-
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgb(166, 166, 166);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    /* border: 3px solid orange; */
+  }
 
 
 
 /*                     HEADER                      */
 header {
     width: 100%;
-    height: 90vh;
-    background-image: url(Assets/img/carros/background1.jpg);
+    height: 95vh;
+    background-image: url(Assets/img/carros/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 nav {
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 90px;
+    width: 100%;
+    padding: 0 30px 0 30px;
     position: fixed;
-    background-color: rgb(69, 69, 69);
+    /* background-color: rgb(69, 69, 69); */
 }
 
 .logo {
     display: flex;
-    padding: 0 0px 0 30px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logoP1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logoP2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: -15px;
 }
 
 .logomarca {
@@ -61,12 +91,58 @@ nav {
 
 .logotipo {
     display: none;
+    color: #FFF;
+    font-family: Ailerons;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav.rolagem {
+    background: linear-gradient(153deg, #272829 -145.87%, #37393D 102.75%);
+}
+
+nav.rolagem div{
+    margin: 0;
+}
+
+nav.rolagem span#txtLogo1{
+    display: none;
+}
+
+nav.rolagem span#txtLogo2{
+    display: none;
+}
+
+nav.rolagem span#txtNome1{
+    display: block;
+    width: 9ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s, steps(9);
+    font-family: airelons;
+}
+ 
+nav.rolagem span#txtNome2{
+    display: block;
+    width: 7ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s, steps(7);
+    font-family: airelons;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
 }
 
 .links {
     display: flex;
     gap: 60px;
-    padding: 0 30px 0 0px;
+    padding: 0 60px 0 0px;
 }
 
 .links a {
@@ -79,11 +155,13 @@ nav {
     line-height: normal;
 }
 
+.links a:hover {
+    color: #a6a6a6;
+}
+
 #frase-home {
-    width: 100%;
     display: flex;
     justify-content: left;
-    
     margin-left: 115px;
 }
 
@@ -96,6 +174,8 @@ nav {
     line-height: normal;
     margin-top: 115px;
 }
+
+
 
 
 
@@ -133,8 +213,11 @@ nav {
 #imagem-empresa {
     width: 50%;
     height: 700px;
-    background-color: wheat;
 }
+
+#imagem-empresa img{
+    height: 700px;
+} 
 
 #texto-empresa {
     width: 40%;
@@ -159,11 +242,10 @@ nav {
 #texto-empresa {
     color: #000;
     font-family: 'Noto Serif';
-    font-size: 18px;
+    font-size: 19px;
     font-style: normal;
     font-weight: 300;
     line-height: 165.2%;
-    /* 29.736px */
 }
 
 
@@ -176,7 +258,8 @@ nav {
 .contato-conteudo {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
     width: 100vw;
     height: 700px;
 }
@@ -187,6 +270,15 @@ nav {
     flex-direction: column;
     align-items: left;
     justify-content: space-around;
+}
+
+.meios-contato {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .contato-nomes {
@@ -222,9 +314,8 @@ nav {
 }
 
 #contato-imagem {
-    width: 50%;
+    width: 60%;
     height: 700px;
-    background-color: wheat;
 }
 
 
@@ -241,8 +332,8 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    background: #404040;
-    padding: 66px 0 66px 0 ;
+    background: linear-gradient(153deg, #272829 -145.87%, #37393D 102.75%);
+    padding: 66px 0 66px 0;
 }
 
 footer hr {
@@ -262,7 +353,7 @@ footer div {
 footer p {
     color: #FFF;
     font-family: 'Noto Serif';
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -271,7 +362,7 @@ footer p {
 footer a {
     color: #FFF;
     font-family: 'Noto Serif';
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
